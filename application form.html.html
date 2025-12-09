@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Addmission Form</h1>
+    <fieldset>
+        <legend>personal information</legend>
+        <table>
+        <tr>
+        <td><label for=""><b>Registration No:</b></h4></label></td>
+        <td><input type="text" placeholder="Enter Registration number" required></td>
+        <td><label for=""><b>Student name </b></label></td>
+        <td><input type="text" placeholder="Enter name" required><br></td>
+        </tr>
+        <tr>
+        <td><label for=""><b>Father name :</b></label></td>
+        <td><input type="text" placeholder="Enter Father name" required></td>
+        <td><label for=""><b>Email :</b></label></td>
+        <td><input type="email" placeholder="Enter email" required><br></td>
+        </tr>
+        <tr>
+        <td><label for=""><b>Mother name :</b></label></td>
+        <td><input type="text" placeholder="Enter Mother name" required></td>
+        <td><label for=""><b>DOB :</b></label></td>
+        <td><input type="datetime-local" required min="2000-01-01" max="2025-12-31"><br></td>
+        </tr>
+        <tr>
+        <td><label for=""><b>aadhar no:</b></label></td>
+        <td><input type="number"  id="" maxlength="12" minlength="12" pattern="\d{12}"></td>
+        <td><label for=""><b>mobile number</b></label></td>
+        <td><input type="tel" placeholder="enter number" maxlength="10" minlength="10" pattern="\d{10}"><br></td>
+        </tr>
+        </table>
+        <label for=""><b>Select gender</b></label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Others">Others
+    </fieldset>
+    <fieldset>
+        <legend>Education Qualification</legend>
+        <div class="one">
+        <table border="1" cellspacing="3" cellpadding="3">
+            <tr>
+                <td><b>Select Board</b></td>
+                <td><b>Total number</b></td>
+                <td><b>Obtain number</b></td>
+                <td><b>Percentage</b></td>
+            </tr>
+            <tr>
+                <td><b>High school:</b><select name="school" id="">
+                    <option value="">--select board--</option>state
+                    <option value="State">State</option>state
+                    <option value="CBSE">CBSE</option>CBSE
+                    <option value="ICSE">ICSE</option>ICSE
+                </select></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Intermidiate:</b><select name="highschool" id="">
+                    <option value="">--select board--</option>state
+                    <option value="State">State</option>state
+                    <option value="State">CBSE</option>CBSE
+                    <option value="State">ICSE</option>ICSE
+                </select></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Graduate:</b><input type="text" placeholder="Input text"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            </div>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>course applied</legend>
+        <label for="">select type of course</label>
+        <select name="course" id="">
+            <option value="">--select course--</option>
+            <option value="science">science</option>
+            <option value="commerce">commerce</option>
+            <option value="Arts">arts</option>
+        </select><br>
+        <label for="">choose <u>under graduate</u>subject here..</label>
+        <input type="radio" name="ug" value="BCA">BCA
+        <input type="radio" name="ug" value="BA">BA
+        <input type="radio" name="ug" value="B.com">B.com
+        <input type="radio" name="ug" value="BBA">BBA
+        <input type="radio" name="ug" value="LLB">LLb
+        <input type="radio" name="ug" value="B.sc">B.sc
+        <br>
+        <label for="">choose <u>post graduate</u>subject here..</label>
+        <input type="radio" name="pg" value="MCA">MCA
+        <input type="radio" name="pg" value="LLM">LLM
+        <input type="radio" name="pg" value="M.com">M.com
+        <input type="radio" name="pg" value="M.sc">M.sc
+    </fieldset><br>
+    <input type="radio"><label for="">I Here by declare that the given above is true and correct to the
+        best of my knowledge and belief
+    </label><br><br>
+    <div>
+    <button style="background-color: rgb(179, 219, 179);" >Register</button>
+    <button style="background-color: rgb(241, 103, 103);">Clear</button>
+    </div>
+</body>
+<style>
+    body{
+        background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=4000);
+    }
+    h1{
+        text-align: center;
+    }
+    div{
+        text-align: center;
+    }
+    label{
+        text-align: center;
+        }
+   .one{
+    text-align: center;
+   }
+</style>
+</html>
